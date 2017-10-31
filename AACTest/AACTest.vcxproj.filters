@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AAC">
+      <UniqueIdentifier>{fcc0ff08-28d4-4b34-a0e2-28eae47f570a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AAC\Sources">
+      <UniqueIdentifier>{a0587efe-ee20-4cdc-b6ae-d282b9babd30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AAC\Headers">
+      <UniqueIdentifier>{5a02d2e8-6103-498b-9059-db1020772328}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\aac\include\aacenc_lib.h">
+      <Filter>AAC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\aac\include\aacdecoder_lib.h">
+      <Filter>AAC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DecoderAAC.h">
+      <Filter>AAC\Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\aac\include\FDK_audio.h">
+      <Filter>AAC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\aac\include\machine_type.h">
+      <Filter>AAC\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\aac\include\genericStds.h">
+      <Filter>AAC\Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DecoderAAC.cpp">
+      <Filter>AAC\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="AACTest.cpp">
+      <Filter>AAC\Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
